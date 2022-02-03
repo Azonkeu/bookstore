@@ -40,7 +40,7 @@ Here is the [live demo](https://azonkeu.github.io/bookstore/.)
    - **Git**
    - **Vscode**
 
-## Author
+## 👩 Author
 
 - Github: [Azonkeu](https://github.com/Azonkeu)
 - LinkedIn: [Azonkeu Ornela](https://www.linkedin.com/in/azonkeu-ornela-88a14b172/)
@@ -50,6 +50,6 @@ Here is the [live demo](https://azonkeu.github.io/bookstore/.)
 
 Give a ⭐️ if you like this project!
 
-## License
+## 📝 License
 
 This project is [MIT](https://github.com/Azonkeu/bookstore/blob/main/LICENSE) licensed.
