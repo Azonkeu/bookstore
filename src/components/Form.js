@@ -1,24 +1,24 @@
 import { React, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { addBookApi } from '../redux/books/books';
 
 const Form = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
 
   const addBookToStore = (e) => {
     e.preventDefault();
-    if (title === '' || author === '') return;
+    if (title === '' || category === '') return;
     const newBook = {
       id: uuidv4(),
       title,
-      author,
+      category,
     };
-    dispatch(addBook(newBook));
+    dispatch(addBookApi(newBook));
     setTitle('');
-    setAuthor('');
+    setCategory('');
   };
 
   return (
@@ -60,40 +60,40 @@ const Form = () => {
         />
         <input
           type="text"
-          name="author"
-          value={author}
-          placeholder="Author"
-          onChange={(e) => setAuthor(e.target.value)}
+          name="category"
+          value={category}
+          placeholder="category"
+          onChange={(e) => setCategory(e.target.value)}
           style={{
             width: '25%',
             marginRight: '4%',
             padding: '1.5%',
           }}
         />
-        {/* <select
-        name="categories"
-        style={{
-          width: '20%',
-          marginRight: '4%',
-          padding: '1.5%',
-        }}
-      >
-        <option value="Romance">
-          Romance
-        </option>
-        <option value="Science fiction">
-          Science fiction
-        </option>
-        <option value="Fantasy">
-          Fantasy
-        </option>
-        <option value="Mystery">
-          Mystery
-        </option>
-        <option value="Economy">
-          Economy
-        </option>
-      </select> */}
+        <select
+          name="category"
+          style={{
+            width: '20%',
+            marginRight: '4%',
+            padding: '1.5%',
+          }}
+        >
+          <option value="Romance">
+            Romance
+          </option>
+          <option value="Science fiction">
+            Science fiction
+          </option>
+          <option value="Fantasy">
+            Fantasy
+          </option>
+          <option value="Mystery">
+            Mystery
+          </option>
+          <option value="Economy">
+            Economy
+          </option>
+        </select>
         <button
           type="submit"
           style={{
