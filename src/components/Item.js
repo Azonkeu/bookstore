@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import { removeBookApi } from '../redux/books/books';
 
 const Item = (props) => {
@@ -12,43 +14,60 @@ const Item = (props) => {
     dispatch(removeBookApi({ id }));
   };
 
+  const percentage = 67;
   return (
     <div style={{
       display: 'flex',
+      maxWidth: '82%',
+      height: '7.625rem',
+      margin: '2.313rem auto 0 auto',
+      padding: '2rem 9.188rem 1.625rem 1.688rem',
+      borderRadius: '4px',
       flexDirection: 'row',
-      margin: '1% auto 0 auto',
-      padding: '2%',
-      backgroundColor: 'white',
-      width: '90%',
+      border: 'solid 1px #e8e8e8',
+      backgroundColor: '#fff',
     }}
     >
       <div style={{ display: 'flex', flexDirection: 'column', width: '50%' }}>
-        <p>Action</p>
-        <h2>{title}</h2>
-        <p style={{ color: 'blue' }}>{category}</p>
+        <p className="action">Action</p>
+        <h2 className="title">{title}</h2>
+        <p className="author">{category}</p>
         <div style={{ display: 'flex', flexDirection: 'row', color: 'blue' }}>
-          <button type="button" style={{ marginRight: '2%' }}>Comments</button>
-          <button type="button" style={{ marginRight: '2%' }} onClick={removeBookFromStore}>Remove</button>
-          <button type="button" style={{ marginRight: '2%' }}>Edit</button>
+          <button type="button" className="comment">Comments</button>
+          <span className="span" />
+          <button type="button" className="comment" onClick={removeBookFromStore}>Remove</button>
+          <span className="span" />
+          <button type="button" className="comment">Edit</button>
         </div>
       </div>
-      <div />
+      <div className="progress-bar-c">
+        <CircularProgressbar
+          value={percentage}
+          styles={buildStyles({ pathColor: '#0EA5E9', marginRight: '10px' })}
+          className="progress-bar"
+        />
+        <div className="progress-value-c">
+          <p className="progress-percentage">
+            {percentage}
+            %
+          </p>
+          <p className="progress-completed">Completed</p>
+        </div>
+      </div>
+      <span className="Line-2" />
       <div style={{
         display: 'flex',
         flexDirection: 'column',
-        width: '20%',
+        width: '40%',
       }}
       >
-        <button
-          type="button"
-          style={{
-            padding: '3%',
-            backgroundColor: 'blue',
-            color: 'white',
-            width: '100%',
-            border: 'none',
-          }}
-        >
+        <h2 className="chapter-h2">CURRENT CHAPTER</h2>
+        <h3 className="chapter-h3">
+          Chapter
+          {' '}
+          { `${Math.floor(Math.random() * 50)}`}
+        </h3>
+        <button className="update-progg-btn" type="button">
           Update progress
         </button>
       </div>
