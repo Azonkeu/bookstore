@@ -14,59 +14,55 @@ const App = () => (
   <Router style={{ maxWidth: '100%' }}>
     <div style={{ maxWidth: '100%' }}>
       <nav style={{
-        maxWidth: '100%',
-        backgroundColor: 'white',
+        width: '100%',
+        paddingLeft: '5%',
+        paddingRight: '5%',
       }}
       >
         <ul style={{
           display: 'flex',
           width: '100%',
           alignItems: 'center',
-          paddingLeft: '4%',
           height: '1.4rem',
-          margin: '0 0 0.9rem',
-          padding: '1.438rem 6.188rem 1.688rem 4.25rem',
+          margin: '0 auto 0.9rem auto',
+          padding: '1.438rem 0 1.688rem 0',
           backgroundColor: '#fff',
         }}
         >
           <li style={{
             fontWeight: 'bold',
             fontSize: '2em',
+            maxWidth: '50%',
+            padding: '0',
           }}
           >
             <Link
               to="/"
+              className="gene genex"
               style={{
                 color: '#0290ff',
-                width: '15rem',
+                maxWidth: '50%',
                 height: '2.313rem',
-                margin: '0.375rem 0.938rem 0.125rem 0',
-                fontFamily: 'Montserrat',
+                margin: '0.375rem 0 0.125rem 0',
                 fontSize: '1.875rem',
                 fontWeight: 'bold',
-                fontStretch: 'normal',
-                fontStyle: 'normal',
-                lineHeight: 'normal',
                 letterSpacing: 'normal',
               }}
             >
               Bookstore CMS
             </Link>
           </li>
-          <li>
+          <li style={{ width: '10%', padding: '0', marginLeft: '4%' }}>
             <Link
               to="/books"
+              className="gene"
               style={{
                 color: '#121212',
-                width: '3.688rem',
+                width: '30%',
                 height: '1rem',
-                margin: '1.125rem 2.563rem 0.688rem 4rem',
-                fontfamily: 'Montserrat',
                 fontSize: '0.935rem',
                 fontWeight: 'normal',
-                fontStretch: 'normal',
-                fontStyle: 'normal',
-                lineHeight: 'normal',
+                margin: '1.125rem 2.563rem 0.688rem 0',
                 letterSpacing: '1.9px',
               }}
             >
@@ -76,24 +72,21 @@ const App = () => (
           <li style={{
             fontWeight: 'bold',
             fontSize: '1.3em',
-            marginLeft: '6%',
+            width: '15%',
           }}
           >
             <Link
               to="/Categories"
+              className="gene general"
               style={{
-                color: 'var(--black-two)',
-                width: '6.563rem',
+                color: '#121212',
+                width: '20%',
                 height: '1rem',
-                margin: '1.125rem 41.5rem 0.688rem 2.563rem',
                 opacity: '0.5',
-                fontFamily: 'Montserrat',
                 fontSize: '0.913rem',
                 fontWeight: 'normal',
-                fontStretch: 'normal',
-                fontStyle: 'normal',
-                lineHeight: 'normal',
                 letterSpacing: '1.9px',
+                margin: '1.125rem 41.5rem 0.688rem 2.563rem',
               }}
             >
               Categories

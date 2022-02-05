@@ -26,15 +26,11 @@ const Form = () => {
       display: 'flex',
       flexDirection: 'column',
       width: '100%',
+      marginBottom: '16rem',
     }}
     >
-      <h2 style={{
-        width: '90%',
-        margin: '2% auto 2% auto',
-        paddingTop: '3%',
-        borderTop: '2px solid #f1f1f1',
-      }}
-      >
+      <hr className="linex" />
+      <h2 className="gene genex tit">
         Add New Book
       </h2>
       <form
@@ -42,8 +38,7 @@ const Form = () => {
         style={{
           display: 'flex',
           flexDirection: 'row',
-          width: '90%',
-          margin: '2% auto 2% auto',
+          width: '100%',
         }}
       >
         <input
@@ -79,30 +74,6 @@ const Form = () => {
             backgroundColor: '#fff',
           }}
         />
-        {/* <select
-          name="category"
-          style={{
-            width: '20%',
-            marginRight: '4%',
-            padding: '1.5%',
-          }}
-        >
-          <option value="Romance">
-            Romance
-          </option>
-          <option value="Science fiction">
-            Science fiction
-          </option>
-          <option value="Fantasy">
-            Fantasy
-          </option>
-          <option value="Mystery">
-            Mystery
-          </option>
-          <option value="Economy">
-            Economy
-          </option>
-        </select> */}
         <button
           type="submit"
           style={{

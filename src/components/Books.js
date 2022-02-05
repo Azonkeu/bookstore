@@ -8,7 +8,9 @@ const Books = () => (
       display: 'flex',
       flexDirection: 'column',
       maxWidth: '100%',
-      padding: '1% 3% 0 3%',
+      backgroundColor: '#fafafa',
+      paddingLeft: '5%',
+      paddingRight: '5%',
     }}
   >
     <List />

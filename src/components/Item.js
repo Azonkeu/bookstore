@@ -18,7 +18,7 @@ const Item = (props) => {
   return (
     <div style={{
       display: 'flex',
-      maxWidth: '82%',
+      width: '100%%',
       height: '7.625rem',
       margin: '2.313rem auto 0 auto',
       padding: '2rem 9.188rem 1.625rem 1.688rem',
@@ -29,15 +29,15 @@ const Item = (props) => {
     }}
     >
       <div style={{ display: 'flex', flexDirection: 'column', width: '50%' }}>
-        <p className="action">Action</p>
-        <h2 className="title">{title}</h2>
-        <p className="author">{category}</p>
+        <p className="action gene genex">Action</p>
+        <h2 className="general genero title">{title}</h2>
+        <p className="general genero font-3 author">{category}</p>
         <div style={{ display: 'flex', flexDirection: 'row', color: 'blue' }}>
-          <button type="button" className="comment">Comments</button>
+          <button type="button" className="general genero font-3 comment">Comments</button>
           <span className="span" />
-          <button type="button" className="comment" onClick={removeBookFromStore}>Remove</button>
+          <button type="button" className="general genero comment button" onClick={removeBookFromStore}>Remove</button>
           <span className="span" />
-          <button type="button" className="comment">Edit</button>
+          <button type="button" className="general genero comment">Edit</button>
         </div>
       </div>
       <div className="progress-bar-c">
@@ -51,7 +51,7 @@ const Item = (props) => {
             {percentage}
             %
           </p>
-          <p className="progress-completed">Completed</p>
+          <p className="progress-completed gene">Completed</p>
         </div>
       </div>
       <span className="Line-2" />
@@ -61,13 +61,19 @@ const Item = (props) => {
         width: '40%',
       }}
       >
-        <h2 className="chapter-h2">CURRENT CHAPTER</h2>
-        <h3 className="chapter-h3">
+        <h2 className="chapter-h2 font-3 general genero">CURRENT CHAPTER</h2>
+        <h3 className="chapter-h3 font-3 general genero">
           Chapter
           {' '}
           { `${Math.floor(Math.random() * 50)}`}
         </h3>
-        <button className="update-progg-btn" type="button">
+        <button
+          className="font-3 update-progg-btn general genero"
+          type="button"
+          style={{
+            letterSpacing: '0.5px',
+          }}
+        >
           Update progress
         </button>
       </div>
