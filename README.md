@@ -24,7 +24,7 @@ In this project, we will build a Bookstore app where users can add and remove bo
 - Add **React Router** and set two `<Route>`s and `<Link>`s for the app's navigation
 
 ## 🖥️ live Demo
-Here is the [live demo](https://azonkeu.github.io/bookstore/.)
+Here is the [live demo](https://youthful-sinoussi-464d07.netlify.app/)
 
 ### Built With
 
