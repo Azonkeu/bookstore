@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Slab:wght@100;200;300&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.user-icon-c {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  height: 2.2rem;
+  right: 5%;
+  border: solid 1px #e8e8e8;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.user-icon {
+  color: #0290ff;
+  font-size: 1.56rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  margin: 0 5px;
+  background-color: #fff;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.action {
+  width: 4.063rem;
+  height: 1.125rem;
+  margin: 0 1.438rem 0 0;
+  opacity: 0.5;
+  font-size: 1.1rem;
+  padding: 0 0 0 1.2%;
+}
+
+.title {
+  width: 20.313rem;
+  height: 1.813rem;
+  margin: 0.488rem 20.188rem 0 0;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+  color: #121212;
+  padding: 0 0 0 1.2%;
+}
+
+.general {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.gene {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.genero {
+  font-family: 'RobotoSlab', sans-serif;
+}
+
+.genex {
+  font-weight: bold;
+}
+
+.author {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+  color: #4386bf;
+  padding: 0 0 0 1.2%;
+}
+
+.font-3 {
+  font-weight: 300;
+}
+
+.comment {
+  width: 4.563rem;
+  height: 1.198rem;
+  margin: 1.188rem 0.938rem 0.125rem 0;
+  font-size: 0.999rem;
+  color: #4386bf;
+  background-color: #fff;
+  border: none;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.span {
+  width: 0.1rem;
+  height: 1.5rem;
+  margin: 1rem 1.063rem 0 0.938rem;
+  border: solid 1px #e8e8e8;
+  background-color: #e8e8e8;
+}
+
+.progress-bar-c {
+  display: flex;
+  gap: 1.25rem;
+  width: 30%;
+}
+
+.progress-bar {
+  height: 70px;
+  width: 70px;
+}
+
+.progress-value-c {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.progress-percentage {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin: 0;
+  color: #121212;
+  font-weight: 500;
+}
+
+.progress-completed {
+  font-family: 'Montserrat', sans-serif;
+  margin: 5px 0 0 0;
+  color: #121212;
+  opacity: 0.5;
+  font-size: 15px;
+  letter-spacing: normal;
+}
+
+.update-progg-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter-h2 {
+  width: 11.875rem;
+  height: 1.125rem;
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+  font-size: 0.813rem;
+  color: #121212;
+}
+
+.chapter-h3 {
+  width: 7.688rem;
+  height: 1.313rem;
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update-progg-btn {
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-size: 0.813rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border-color: #0290ff;
+}
+
+.Line-2 {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 1.125rem 3.688rem 0 4.938rem;
+  border: solid 1px #e8e8e8;
+}
+
+.linex {
+  width: 100%;
+  height: 0.125rem;
+  background-color: #e8e8e8;
+  margin: 2.5rem auto 1.813rem auto;
+  border: solid 1px #e8e8e8;
+}
+
+.tit {
+  width: 100%;
+  height: 1.5rem;
+  margin: 1.813rem 32.75rem 1.188rem 0;
+  letter-spacing: -0.18px;
+  color: #888;
+}
