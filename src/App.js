@@ -15,7 +15,7 @@ const App = () => (
     <div className="app-div">
       <nav className="app-nav">
         <ul className="app-ul">
-          <li className="app-li">
+          <li className="app-li genex">
             <Link to="/" className="gene genex app-link">
               Bookstore CMS
             </Link>

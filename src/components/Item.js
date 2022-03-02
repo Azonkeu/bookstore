@@ -44,12 +44,7 @@ const Item = (props) => {
         </div>
       </div>
       <span className="Line-2" />
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '40%',
-      }}
-      >
+      <div className="chap">
         <h2 className="chapter-h2 font-3 general genero">CURRENT CHAPTER</h2>
         <h3 className="chapter-h3 font-3 general genero">
           Chapter
