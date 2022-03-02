@@ -1,37 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto+Slab:wght@100;200;300&display=swap');
 
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  max-width: 100%;
 }
 
 ul {
   margin: 0;
   padding: 0;
-}
-
-.user-icon-c {
-  position: absolute;
-  border-radius: 50%;
-  background-color: #fff;
-  height: 2.2rem;
-  right: 5%;
-  border: solid 1px #e8e8e8;
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.user-icon {
-  color: #0290ff;
-  font-size: 1.56rem;
-  padding: 0.3rem;
-  cursor: pointer;
-  margin: 0 5px;
-  background-color: #fff;
 }
 
 li {
@@ -52,63 +34,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.action {
-  width: 4.063rem;
-  height: 1.125rem;
-  margin: 0 1.438rem 0 0;
-  opacity: 0.5;
-  font-size: 1.1rem;
-  padding: 0 0 0 1.2%;
-}
-
-.title {
-  width: 20.313rem;
-  height: 1.813rem;
-  margin: 0.488rem 20.188rem 0 0;
-  font-size: 1.375rem;
-  letter-spacing: -0.2px;
-  color: #121212;
-  padding: 0 0 0 1.2%;
-}
-
-.general {
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-}
-
 .gene {
   font-family: 'Montserrat', sans-serif;
 }
@@ -121,6 +46,36 @@ body {
   font-weight: bold;
 }
 
+.app-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.app-nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 4.3rem;
+  padding: 2% 1% 1% 1%;
+}
+
+.app-ul {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  height: 4.3rem;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.app-li {
+  max-width: 30%;
+  font-size: 1.2em;
+  padding: 0;
+}
+
 .author {
   width: 6.688rem;
   height: 1.188rem;
@@ -130,75 +85,111 @@ body {
   padding: 0 0 0 1.2%;
 }
 
-.font-3 {
-  font-weight: 300;
+.app-link {
+  color: #0290ff;
+  max-width: 50%;
+  font-size: 1em;
+  letter-spacing: normal;
 }
 
-.comment {
-  width: 4.563rem;
-  height: 1.198rem;
-  margin: 1.188rem 0.938rem 0.125rem 0;
-  font-size: 0.999rem;
-  color: #4386bf;
+.app-litwo {
+  width: 5%;
+  padding: 0;
+  margin-left: 5%;
+}
+
+.app-linktwo {
+  color: #121212;
+  width: 30%;
+  height: 1rem;
+  font-size: 0.935rem;
+  font-weight: normal;
+  margin: 1.125rem 2.563rem 0.688rem 0;
+}
+
+.app-lithree {
+  font-weight: bold;
+  width: 15%;
+}
+
+.app-linkthree {
+  color: #121212;
+  width: 20%;
+  height: 1rem;
+  opacity: 0.5;
+  font-size: 0.913rem;
+  font-weight: normal;
+  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+}
+
+.user-icon-c {
+  position: absolute;
+  border-radius: 50%;
   background-color: #fff;
-  border: none;
-}
-
-.button {
-  cursor: pointer;
-}
-
-.span {
-  width: 0.1rem;
-  height: 1.5rem;
-  margin: 1rem 1.063rem 0 0.938rem;
+  height: 1.2rem;
+  right: 5%;
   border: solid 1px #e8e8e8;
-  background-color: #e8e8e8;
+}
+
+.item-maindiv {
+  display: flex;
+  max-width: 100%;
+  margin: 2.313rem auto 0 auto;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  flex-direction: column;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.item-indiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.action {
+  width: 4.063rem;
+  height: 1.125rem;
+  margin: 0 1.438rem 0 0;
+  opacity: 0.5;
+  font-size: 1.1rem;
+  padding: 0 0 0 1.2%;
+}
+
+.title {
+  width: 100%;
+  margin: 0.488rem 20.188rem 0 0;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+  color: #121212;
+  padding: 0 0 0 1.2%;
 }
 
 .progress-bar-c {
   display: flex;
-  gap: 1.25rem;
-  width: 30%;
+  flex-direction: row;
+  align-items: center;
+  margin: 4% 0 0 0;
 }
 
 .progress-bar {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
+  margin-right: 6%;
 }
 
-.progress-value-c {
+.chap {
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
-}
-
-.progress-percentage {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  margin: 0;
-  color: #121212;
-  font-weight: 500;
-}
-
-.progress-completed {
-  font-family: 'Montserrat', sans-serif;
-  margin: 5px 0 0 0;
-  color: #121212;
-  opacity: 0.5;
-  font-size: 15px;
-  letter-spacing: normal;
-}
-
-.update-progg-c {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  margin: 19% 0 0 0;
+  text-align: center;
 }
 
 .chapter-h2 {
-  width: 11.875rem;
-  height: 1.125rem;
-  margin: 0.063rem 3.625rem 0 3.688rem;
+  width: 100%;
+  margin: 0.163rem auto 0 auto;
   opacity: 0.5;
   font-size: 0.813rem;
   color: #121212;
@@ -208,7 +199,6 @@ body {
   width: 7.688rem;
   height: 1.313rem;
   margin: 0.438rem 6.813rem 0.25rem 3.688rem;
-  font-family: 'RobotoSlab', sans-serif;
   font-size: 1rem;
   font-stretch: normal;
   font-style: normal;
@@ -219,7 +209,6 @@ body {
 
 .update-progg-btn {
   width: 11.5rem;
-  height: 2.063rem;
   margin: 0.75rem 0 0.563rem 3.688rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
@@ -231,25 +220,254 @@ body {
   border-color: #0290ff;
 }
 
-.Line-2 {
-  width: 0.125rem;
-  height: 4.375rem;
-  margin: 1.125rem 3.688rem 0 4.938rem;
-  border: solid 1px #e8e8e8;
+.butn-block {
+  justify-items: center;
 }
 
-.linex {
+.form {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 0.125rem;
-  background-color: #e8e8e8;
-  margin: 2.5rem auto 1.813rem auto;
+}
+
+.inp {
+  width: 60%;
   border: solid 1px #e8e8e8;
+  height: 1.6rem;
+  margin: 1.188rem auto 0 auto;
+  padding: 4% 3% 4% 2%;
+  border-radius: 4px;
+}
+
+.inpucat {
+  width: 60%;
+  height: 2.23rem;
+  margin: 1.188rem auto 0 auto;
+  padding: 2% 2% 2% 2%;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.sub-bot {
+  width: 35%;
+  border: none;
+  color: white;
+  margin: 1.188rem auto 0 auto;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
 }
 
 .tit {
   width: 100%;
   height: 1.5rem;
-  margin: 1.813rem 32.75rem 1.188rem 0;
+  margin: 1.813rem auto 1.188rem auto;
   letter-spacing: -0.18px;
   color: #888;
+  text-align: center;
+}
+
+.comment {
+  width: 4.563rem;
+  height: 1.198rem;
+  margin: 1.068rem 0.938rem 0.125rem 0;
+  font-size: 0.999rem;
+  color: #4386bf;
+  background-color: #fff;
+  border: none;
+}
+
+.span {
+  width: 0.1rem;
+  height: 1.2rem;
+  margin: 1rem 1.063rem 0 0.938rem;
+  border: solid 1px #e8e8e8;
+  background-color: #e8e8e8;
+}
+
+@media only screen and (min-width: 962px) {
+  .app-nav {
+    padding: 0 5% 0 5%;
+    height: 4rem;
+  }
+
+  .app-ul {
+    width: 100%;
+    height: 8rem;
+    margin: 0 auto 0.9rem auto;
+    padding: 1.078rem 0 1.688rem 0;
+  }
+
+  .app-li {
+    max-width: 50%;
+    font-size: 2em;
+  }
+
+  .app-link {
+    height: 2.313rem;
+    margin: 0.375rem 0 0.125rem 0;
+    font-size: 1.875rem;
+  }
+
+  .app-litwo {
+    width: 10%;
+    margin-left: 4%;
+  }
+
+  .user-icon-c {
+    height: 2.2rem;
+    margin: 0 auto 0 0;
+  }
+
+  .user-icon {
+    color: #0290ff;
+    font-size: 1.56rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    margin: 0 5px;
+    background-color: #fff;
+  }
+
+  .item-maindiv {
+    height: 11.625rem;
+    flex-direction: row;
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  .item-indiv {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .general {
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .title {
+    width: 20.459rem;
+  }
+
+  .font-3 {
+    font-weight: 300;
+  }
+
+  .comment {
+    margin: 1.188rem 0.938rem 0.125rem 0;
+  }
+
+  .button {
+    cursor: pointer;
+  }
+
+  .progress-bar-c {
+    display: grid;
+    width: 30%;
+    margin: 0;
+  }
+
+  .progress-bar {
+    height: 70px;
+    width: 70px;
+  }
+
+  .span {
+    height: 1.5rem;
+  }
+
+  .progress-value-c {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+
+  .progress-percentage {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin: 0;
+    color: #121212;
+    font-weight: 500;
+  }
+
+  .progress-completed {
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px 0 0 0;
+    color: #121212;
+    opacity: 0.5;
+    font-size: 15px;
+    letter-spacing: normal;
+  }
+
+  .update-progg-c {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Line-2 {
+    width: 0.125rem;
+    height: 4.375rem;
+    margin: 1.125rem 3.688rem 0 4.938rem;
+    border: solid 1px #e8e8e8;
+  }
+
+  .linex {
+    width: 100%;
+    height: 0.125rem;
+    background-color: #e8e8e8;
+    margin: 2.5rem auto 1.813rem auto;
+    border: solid 1px #e8e8e8;
+  }
+
+  .tit {
+    margin: 1.813rem 32.75rem 1.188rem 0;
+    text-align: left;
+  }
+
+  .form {
+    flex-direction: row;
+  }
+
+  .chapter-h2 {
+    width: 11.875rem;
+  }
+
+  .inp {
+    width: 80%;
+    margin: 1.188rem 2.125rem 0 0;
+    padding: 2%;
+  }
+
+  .inpucat {
+    width: 27%;
+    height: 2.23rem;
+    margin: 1.188rem 2.125rem 0;
+    padding: 2%;
+  }
+
+  .chap {
+    width: 40%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .sub-bot {
+    margin: 1.188rem 0 0 2.125rem;
+  }
 }
